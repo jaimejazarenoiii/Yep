@@ -16,6 +16,7 @@
 		B37B2BD0237A918C003B5A74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37B2BCF237A918C003B5A74 /* Assets.xcassets */; };
 		B37B2BD3237A918C003B5A74 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37B2BD2237A918C003B5A74 /* Preview Assets.xcassets */; };
 		B37B2BD6237A918C003B5A74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B37B2BD4237A918C003B5A74 /* LaunchScreen.storyboard */; };
+		B37B2BDC237A96EE003B5A74 /* Yep.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37B2BDB237A96EE003B5A74 /* Yep.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		B37B2BD2237A918C003B5A74 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B37B2BD5237A918C003B5A74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B37B2BD7237A918C003B5A74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B37B2BDB237A96EE003B5A74 /* Yep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yep.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				B37B2BAC237A8FC8003B5A74 /* Yep.h */,
 				B37B2BAD237A8FC8003B5A74 /* Info.plist */,
+				B37B2BDB237A96EE003B5A74 /* Yep.swift */,
 			);
 			path = Yep;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				TargetAttributes = {
 					B37B2BA8237A8FC8003B5A74 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					B37B2BB1237A8FC8003B5A74 = {
 						CreatedOnToolsVersion = 11.0;
@@ -271,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B37B2BDC237A96EE003B5A74 /* Yep.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +442,7 @@
 		B37B2BBE237A8FC8003B5A74 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = NJ95R63YAQ;
@@ -453,6 +459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.churnetworks.Yep;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,6 +468,7 @@
 		B37B2BBF237A8FC8003B5A74 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = NJ95R63YAQ;
@@ -485,6 +493,7 @@
 		B37B2BC1237A8FC8003B5A74 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NJ95R63YAQ;
 				INFOPLIST_FILE = YepTests/Info.plist;
@@ -503,6 +512,7 @@
 		B37B2BC2237A8FC8003B5A74 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NJ95R63YAQ;
 				INFOPLIST_FILE = YepTests/Info.plist;
